@@ -1,10 +1,26 @@
 package io.alvdelci.productsapi.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.Id;
+
 //POJO -> Plain Old Java Object
+@Entity
+@Table(name = "product")
 public class Product {
+
+    @Id
+    @Column(name = "id")
     private String id;
+
+    @Column(name = "name")
     private String name;
+
+    @Column(name = "description")
     private String description;
+
+    @Column(name = "price")
     private Double price;
 
     //Getters and Setters
