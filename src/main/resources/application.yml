@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Products API
+  datasource:
+    url: jdbc:h2:mem:products
+    username: sa
+    password: docker
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enable: true
+      path: /h2-console #pode definir outro path para acessar o banco no browser
